@@ -29,7 +29,7 @@ html {
  
 .wrapper {
     max-width: 1920px;
-      height:5500px;  
+    height:5500px;  
     margin: 0 auto;
     position: relative;     
     background-image: url(images/background.jpg);
@@ -128,6 +128,8 @@ h3 {
 .scientific-discoveries__proven{
     width: 100%;
     margin-bottom: 755px;
+    display: flex;
+    justify-content:flex-end;
     
     }
 .scientific-discoveries__proven-inner::after {
@@ -141,12 +143,13 @@ h3 {
 }
 
 .scientific-discoveries__proven-inner {
-    width: 715px;
+    width: 59.5%;
     padding: 20px 65px;
     position: relative;
     border: 1px solid #636869;
+    border-right: none;
     z-index: 1;
-    margin-left: 46%;
+   
 }
 .img {
     transform: rotate(45deg);
@@ -196,7 +199,7 @@ h3 {
 }
 
 .mars__info {
-    margin-left: 200px;
+    /* margin-left: 200px; */
     position: absolute;
     width: 712px;
     z-index: 5;
@@ -215,7 +218,7 @@ h3 {
     width: 200px;
 }
 .bitcoin__inner {
-   width: 700px;
+   width: 50%;
    height: 100%;
    padding: 180px 160px 190px 60px;
 }
@@ -232,7 +235,7 @@ footer {
     padding-bottom: 115px;
 }
 .decor-border {
-    width: 1160px;
+    width: 90%;
     height: 270px;
     border: 1px solid #636869;
     position: absolute;
@@ -249,7 +252,6 @@ footer {
 }
 .decor-border__info {
     position: absolute;
-    display: block;
     margin-top: 50px;
     display: flex;
     margin-left: 60px;
