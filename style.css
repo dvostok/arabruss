@@ -1,0 +1,253 @@
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      line-height: 1.4; 
+      height: auto;
+  }
+ 
+.wrapper {
+    max-width: 1920px;
+    height: auto;
+     height:5387px; 
+    margin: 0 auto;
+    position: relative;     
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+    max-width: 1532px;
+    margin: 0 auto;    
+}
+
+ul {
+    padding: 50px 0;
+    margin: 0 auto 30px;
+    list-style: none;
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+}
+ul li {
+    padding-bottom: 2px; 
+    color: white;
+    border-bottom: 1px solid #00d6d9;
+}
+.ilon__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 280px;
+}
+.ilon__info
+ {    padding-top: 60px;
+}
+
+.ilon__image {
+    width: 955px;
+    height: 725px;
+    background-image: url(images/book.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+h2 {
+    margin: 0 0 23px 0;
+    font-size: 40px;
+}
+h3 {
+    margin-top: 0;
+    font-size: 36px;
+}
+.ilon p {
+    margin-bottom: 125px;
+    margin-top: 0;
+}
+.order {
+    margin-bottom: 35px;
+    font-size: 24px;
+}
+.btn {
+    width: 316px;
+    height: 77px;
+    padding-top: 25px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.2;  
+    box-shadow: inset 0px 0px 27px 1.45px rgba(0, 0, 0, 0.5);
+    background-color: #006b6e;
+}
+.btn:hover,
+.btn:active {
+    background-color: #00d3d5;
+    box-shadow: 0px 0px 27px 1.45px #fff;
+}
+.scientific-discoveries__inner {
+    display: flex;
+    flex-wrap: wrap;  
+}
+.scientific-discoveries__item {
+    width: 710px;
+    position: relative;
+    margin-bottom: 80px;
+}
+.scientific-discoveries__item::before {
+    content: url(images/poin_t1.png);
+    position: absolute;
+    left: -60px;
+    top: 0;
+}
+.scientific-discoveries__proven{
+    width: 100%;
+    margin-bottom: 755px;
+    
+    }
+.scientific-discoveries__proven-inner::after {
+    content: 'DNA';
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #636869;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.scientific-discoveries__proven-inner {
+    width: 1020px;
+    padding: 20px 65px;
+    position: relative;
+    border: 1px solid #636869;
+    z-index: 1;
+    margin-left: 46%;
+}
+.img {
+    transform: rotate(45deg);
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 65px;
+    z-index: 5;
+    background-color: #102023;
+}
+.poin {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 46px;
+    left: -40px;
+    z-index: 6;
+} 
+
+.proven-info p {
+    margin: 0;
+}
+.mars {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 380px;
+}
+.mars__container {
+    position: relative;
+}
+.mars__tour {
+    border: 1px solid #636869;
+    width: 510px;
+    height: 500px;
+    position: absolute;
+    top: -30px;
+}
+.mars__tour::after{
+    content: 'mars-tour';
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #636869;
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+.mars__info {
+    position: absolute;
+    width: 712px;
+    z-index: 5;
+}
+.mars__info p{
+    width: 540px;
+}
+.bitcoin {
+    height: 730px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 400px;  
+}
+.bitcoin h1{
+    margin-bottom: 55px;
+    width: 200px;
+}
+.bitcoin__inner {
+   width: 1120px;
+   height: 100%;
+   padding: 100px 260px 190px;
+}
+.actions h1 {
+    margin-bottom: 50px;
+}
+.actions {
+    margin-bottom: 75px;
+}
+footer {
+    position: relative;
+    padding-bottom: 115px;
+}
+.decor-border {
+    width: 1360px;
+    height: 270px;
+    border: 1px solid #636869;
+    position: absolute;
+    top: 0;
+    left: 130px;
+}
+.qr-code {
+    display: inline-block;
+    width: 270px;
+    height: 270px;
+    border: 1px solid #00d6d9;
+    background-color: black;
+    margin-right: 110px;
+}
+.decor-border__info {
+    position: absolute;
+    display: block;
+    margin-top: 110px;
+    display: flex;
+}
