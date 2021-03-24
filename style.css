@@ -98,6 +98,7 @@ h3 {
     height: 77px;
     padding-top: 25px;
     position: absolute;
+    bottom: 20px;
     right: 20px;
     border-radius: 30px;
     text-align: center;
@@ -185,7 +186,7 @@ h3 {
 }
 .mars__tour {
     border: 1px solid #636869;
-    width: 510px;
+    width: 40%;
     height: 500px;
     position: absolute;
     top: -30px;
@@ -205,6 +206,7 @@ h3 {
     position: absolute;
     width: 712px;
     z-index: 5;
+    left: 15%;
 }
 .mars__info p{
     width: 540px;
@@ -263,6 +265,11 @@ footer {
     background-color: black;
     margin-right: 110px;
 }
+.qr-code img {
+    width: 90%;
+    margin: 10px;
+}
+
 .decor-border__info {     
     margin-left: 260px;
    
@@ -275,6 +282,7 @@ footer {
         position: fixed;
         top:0;
         left: 30%;
+        z-index: 10;
     }
 
  iframe {    
@@ -290,6 +298,286 @@ footer {
 .close {
     color: #ffffff;
     position: absolute;
-    top: 20;
+    top: 20px;
     right: 30px;
+}
+.menu-btn {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.menu-btn span {
+    display: block;
+    width: 40px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+
+/******adaptive******/
+@media(max-width: 1150px) {
+    .scientific-discoveries {
+        padding-left: 70px;
+    }
+    .ilon,
+    .actions {
+        padding-left: 20px;
+    }
+    .bitcoin__inner {
+        padding: 90px 60px 10px;
+    }
+}
+
+@media(max-width: 960px) {
+    .scientific-discoveries__inner {
+    
+        flex-direction: column;
+    }
+    .scientific-discoveries__item {
+        width: 100%;
+    }
+    
+    .bitcoin__inner {
+        padding: 50px 60px 10px 20px;
+        width: 60%;
+    }
+
+    .scientific-discoveries__proven-inner {
+        padding: 20px 20px 20px 50px;
+    }
+    .ilon__image {
+        width: 750px;
+        height: 450px;
+    }
+    #popup{
+        left: 15%;
+    }
+    #popup.form {
+        min-width: 360px !important;
+    }
+    footer h1 {
+        font-size: 44px;
+    }
+    .btn {
+        bottom: -34px;
+    }
+}
+
+@media(max-width: 870px) {
+    .ilon__inner {
+        margin-bottom: 160px;
+    }
+    .scientific-discoveries__item {
+        margin-bottom: 50px;
+    }
+    .mars__info{
+        width: 70%;
+    }
+    h1 {
+        font-size: 40px;
+    }
+
+    footer h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    .btn {
+        height: 60px;
+        padding-top: 16px;
+    }
+    .bitcoin {
+        margin-bottom: 290px;
+    }
+    ul {
+        padding: 30px 20px;
+    }
+}
+
+
+@media(max-width: 769px) {
+   
+    .bitcoin {
+        margin-bottom: 190px;
+    }
+    .bitcoin__inner {
+        width: 65%;
+    }
+    ul {
+        justify-content: flex-end;
+        width: 100%;
+    }
+    ul li {
+        margin-right: 30px;
+    }
+    .btn {
+        width: 250px;
+        bottom: -30px;
+        right: 40px;
+        font-size: 18px;
+    }
+}
+@media(max-width: 672px) {
+    .ilon__image {
+        height: 376px;
+        background-size: 149%;
+        margin-top: 30px;
+    }
+    .mars__info p {
+        width: 100%;
+    }
+    .bitcoin {
+        margin-bottom: 265px;
+    }
+    .btn {
+        width: 250px;
+        bottom: -30px;
+        right: 40px;
+        font-size: 18px;
+    }
+    #popup {
+        left: 6%;        
+    }
+}
+@media(max-width: 590px) {
+    .menu-btn {
+        display: block;
+    }
+    ul {
+        display: none;
+        text-align: center;
+        font-size: 14px;
+        position: absolute;
+        top: 70px;
+        background-color: #102023;
+        height: 100%;
+    }
+    ul li {
+        padding: 10px;
+    }
+    /*ul {
+        transform: translateX(-110%);
+    }
+    .active ul {
+        transform: translateX(110%);
+    } */
+    .ilon__inner {
+        flex-direction: column-reverse;
+    }
+    .ilon__image {
+        width: 85%;
+        height: 460px;
+        margin-top: 80px;
+    }
+    .ilon__info{
+        padding-top: 0;
+    }
+    .ilon p {
+        margin-bottom: 75px;
+    }
+    .btn {
+        position: static;
+        margin: 0 auto;
+    }
+    .decor-border {
+        height: auto;
+        text-align: center;
+        padding: 10px;
+        
+    }
+    .decor-border__info {
+        margin-left: 0px;
+     
+    }
+    .btn {
+        margin: 0 60px 30px;
+    }
+    .qr-code {
+        position: static;
+        margin: 0 auto;       
+    }
+    .mars__info {
+        width: 85%;
+    }
+    .bitcoin__inner {
+        width: 80%;
+        padding: 115px 39px 10px 30px;
+    }
+    .bitcoin h1 {
+        margin-bottom: 20px;
+    }
+    #popup{
+        left: 5%;
+        width: 360px;
+    }
+    form {
+        width: 360px !important;
+        min-width: none !important; 
+    }
+    .rc-anchor-normal {
+        width: 285px;
+    }
+    iframe {
+        width: 360px;
+    }
+    div.input-wrap {
+        width: 300px;
+    }
+    header > h1, p {
+        margin: 0 0 20px 0;
+        width: 300px;
+    }
+}
+
+@media(max-width: 420px) { 
+    
+    #popup{
+      
+    }
+    form {
+        width: 360px !important;
+        min-width: none !important; 
+    }
+    .rc-anchor-normal {
+        width: 285px;
+    }
+    iframe {
+        width: 360px;
+    }
+    div.input-wrap {
+        width: 300px;
+    }
+
+    .proven-info {
+        width: 200px;
+    }
+    .scientific-discoveries__proven-inner {
+        width: 100%;
+    }
+    .bitcoin__inner {
+        width: 90%;
+    }
+    .actions p {
+        width: 320px;
+    }
+    .btn {
+        margin: 0 10px 30px;
+    }
+    .ilon__info{
+        padding-left: 10px;
+     }
+     .qr-code {
+         position: absolute;
+         left: 70px;
+         top: 330px;
+     }
+     .wrapper {
+         height: 5550px;
+     }
 }
