@@ -97,6 +97,8 @@ h3 {
     width: 316px;
     height: 77px;
     padding-top: 25px;
+    position: absolute;
+    right: 20px;
     border-radius: 30px;
     text-align: center;
     font-size: 22px;
@@ -211,8 +213,8 @@ h3 {
     height: 730px;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 200px; 
-    padding-top: 100px; 
+    margin-bottom: 400px; 
+   
 }
 .bitcoin h1{
     margin-bottom: 55px;
@@ -246,14 +248,14 @@ footer {
     height: 270px;
     margin-left: 20px;
     border: 1px solid #636869;
-    padding-top: 60px;
+    padding-top: 20px;
     position: relative;
     
   }
 .qr-code {
     position: absolute;
      left: 20px;
-     top: 150px;
+     top: 110px;
     display: inline-block;
     width: 200px;
     height: 200px;
@@ -263,15 +265,31 @@ footer {
 }
 .decor-border__info {     
     margin-left: 260px;
+   
 }
-.form {
-    margin-top: 60px;
-    margin-left: 200px;
+#popup {    
+        visibility: hidden;
+        height: 700px;
+        width: 570px;
+        border-width: 0;
+        position: fixed;
+        top:0;
+        left: 30%;
+    }
+
+ iframe {    
+    height: 700px;
+    width: 570px;    
+    border-width: 0;
+} 
+
+#popup:target {
+    visibility: visible;
     
 }
-iframe {
-    height: 700px;
-    width: 570px;
-    margin-top: 30px;
-
+.close {
+    color: #ffffff;
+    position: absolute;
+    top: 20;
+    right: 30px;
 }
