@@ -283,17 +283,20 @@ footer {
         top:0;
         left: 30%;
         z-index: 10;
-        
+        transition: all 0.5s; 
+        transform: translateY(-100%);      
     }
 
  iframe {    
     height: 630px;
     width: 570px;    
     border-width: 0;
+      
 } 
 
 #popup:target {
     visibility: visible;
+    transform: translateY(0%);
     
 }
 .close {
@@ -601,7 +604,7 @@ footer {
     }
     iframe, 
     #popup {
-               height: 565px;
+    height: 565px;
     }
     
 }
