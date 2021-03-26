@@ -235,13 +235,9 @@ h3 {
     margin-bottom: 75px;
 }
 .actions__inner {
-    
-    display: flex;
-    justify-content: space-between;
-}
-.actions p{
     width: 450px;
 }
+
 footer {
     padding-bottom: 115px;
 }
@@ -315,6 +311,22 @@ footer {
     width: 40px;
     border-bottom: 2px solid white;
     padding-bottom: 10px;
+    transition: all 0.3s;
+}
+.menu-btn.active .disappear {
+    display: none;
+}
+.menu-btn.active .move-down {
+    transform: rotate(45deg);
+}
+.menu-btn.active .move-up {
+    transform: rotate(135deg);
+}
+.menu-btn.active span {
+    padding-bottom: 0px;
+}
+.menu-btn.active {
+   margin-top: 20px;
 }
 
 
@@ -333,6 +345,7 @@ footer {
 }
 
 @media(max-width: 960px) {
+    
     .scientific-discoveries__inner {
     
         flex-direction: column;
@@ -344,6 +357,10 @@ footer {
     .bitcoin__inner {
         padding: 50px 60px 10px 20px;
         width: 60%;
+    }
+    .bitcoin p {
+        padding-right: 10px;
+       
     }
 
     .scientific-discoveries__proven-inner {
@@ -449,6 +466,10 @@ footer {
     }
 }
 @media(max-width: 590px) {
+    p {
+        
+        padding-right: 6px;
+    }
     .menu-btn {
         display: block;
     }
@@ -504,7 +525,7 @@ footer {
     }
     .bitcoin__inner {
         width: 80%;
-        padding: 115px 39px 10px 30px;
+        padding: 115px 0px 10px 30px;
     }
     .bitcoin h1 {
         margin-bottom: 20px;
@@ -526,10 +547,15 @@ footer {
     div.input-wrap {
         width: 300px;
     }
-    header > h1, p {
-        margin: 0 0 20px 0;
-        width: 285px;
+    .proven-info p {
+        width: 270px;
     }
+
+    .actions__inner {
+        width: 100%;
+        padding-right: 10px;
+    }
+   
 }
 
 @media(max-width: 420px) { 
@@ -556,7 +582,7 @@ footer {
         width: 100%;
     } 
     .proven-info {
-        width: 200px;
+        width: 185px;
     }
     .scientific-discoveries__proven-inner {
         width: 100%;
@@ -564,9 +590,7 @@ footer {
     .bitcoin__inner {
         width: 90%;
     }
-    .actions p {
-        width: 320px;
-    }
+    
     .btn {
         display: block;
         margin: 0 auto 30px;
@@ -580,21 +604,18 @@ footer {
 }
 
 @media(max-width: 321px) { 
-    p {
-        width: 239px;
-        padding-right: 5px;
-    }
+   
     .proven-info {
-        width: 180px;
-    }
-    
-    .actions p {
-        width: 280px;
+        width: 155px;
     }
     
     iframe, 
     #popup {
     height: 565px;
+    }
+    
+    .btn{
+        width: 230px;
     }
     
 }
